@@ -16,8 +16,8 @@ const Mapfunction = () => {
                 <td>Subject</td>
   </tr>
     {
-        user.map((item)=>{
-            <tr>
+        user.map((item ,i)=>{
+            <tr key={i}>
                 <td>{item.name}</td>
                 <td>{item.class}</td>
                 <td>{item.subject}</td>
