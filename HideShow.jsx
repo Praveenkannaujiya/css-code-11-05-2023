@@ -1,0 +1,18 @@
+import React, { useState } from 'react'
+
+const HideShow = () => {
+  const [status,setStatus]=useState(true)
+  // const [show,setShow]=useState(true)
+  return (
+    <div>
+
+       { status ? <h1>Hide And Show</h1> :null   }
+
+      <button onClick={()=>setStatus(false)}>Hide</button>
+      <button onClick={()=>setStatus(true)}>show</button>
+      <button onClick={()=>setStatus(!status)}>Toggle</button>
+    </div>
+  )
+}
+
+export default HideShow
